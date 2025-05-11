@@ -15,7 +15,6 @@ contract Swap {
 
         // approve ke router Uniswap
         IERC20(weth).approve(uniswapRouter, amountIn);
-
         ISwapRouter.ExactInputSingleParams memory params = ISwapRouter.ExactInputSingleParams({
             tokenIn: weth,
             tokenOut: usdc,
